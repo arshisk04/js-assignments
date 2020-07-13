@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Assignment1</title>
+        <script>
+            function date()
+            {    
+                var d,t,h,days;
+                d = new Date();
+                days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                document.write("Today is : " + days[d.getDay()]);
+                document.write("<br>" + "Current Time is:- " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <input type="button" value="Today's Date" onClick = date()>
+    </body>
+</html>
