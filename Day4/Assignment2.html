@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Assignment 2</title>
+    </head>
+    <body>
+        <h1>
+            <script>
+                const student = {
+                    name:"Helsinki",
+                    age:24,
+                    projects:{
+                        dicegame: "Two Player"
+                    },
+                };
+                document.write(student.age+"<br>");
+                document.write(student.name+"<br>");
+                document.write(student.projects.dicegame+"<br>");
+                document.write("To avoid this, we use destructuring assignment in JS!");
+                
+                ({name, age} = student);
+                document.write("<br>"+name);
+                document.write("<br>"+age);
+            </script>
+        </h1>
+    </body>
+</html>

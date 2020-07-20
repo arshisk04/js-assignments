@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Assignment 3</title>
+    </head>
+    <body>
+        <h1>
+            <script>
+                var ShoppingList = ['Wheat', 'Rice', 'Oil', 'Sugar', 'Soap'];
+                var ShoppingBasket = [ShoppingList];
+                do{
+                    var item = prompt("Enter an item to be added in ShoppingBasket ");
+                    ShoppingBasket.push(item);
+                    var ans = prompt("Do you want to add more items ?(y/n)");
+                }while(ans == 'y')
+                
+                document.write(ShoppingBasket);
+            </script>
+        </h1>
+    </body>
+</html>

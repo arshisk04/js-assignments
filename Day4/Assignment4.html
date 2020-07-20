@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Assignment 4</title>
+    </head>
+    <body>
+        <h1>
+            <script>
+                var ch = prompt("Enter Which Operation to be performed (+,-,*,/,%,sqrt): ");
+                switch(ch)
+                {
+                    case '+':
+                        var a = Number(prompt("Enter First Number :"));
+                        var b = Number(prompt("Enter Second Number :"));
+                        var res = a+b;
+                        document.write("Addition is "+a+" + "+b+" = "+res);
+                        break;
+                        
+                    case '-':
+                        var a = Number(prompt("Enter First Number :"));
+                        var b = Number(prompt("Enter Second Number :"));
+                        var res = a-b;
+                        document.write("Subtraction is "+a+" - "+b+" = "+res);
+                        break;
+                        
+                    case '*':
+                        var a = Number(prompt("Enter First Number :"));
+                        var b = Number(prompt("Enter Second Number :"));
+                        var res = a*b;
+                        document.write("Multiplication is "+a+" * "+b+" = "+res);
+                        break;
+                        
+                    case '/':
+                        var a = Number(prompt("Enter First Number :"));
+                        var b = Number(prompt("Enter Second Number :"));
+                        var res = a/b;
+                        document.write("Division is "+a+" / "+b+" = "+res);
+                        break;
+                        
+                    case '%':
+                        var a = Number(prompt("Enter First Number :"));
+                        var b = Number(prompt("Enter Second Number :"));
+                        var res = a/b*100;
+                        document.write("Percentage is "+a+" % "+b+" = "+res);
+                        break;
+                        
+                    case 'sqrt':
+                        var a = Number(prompt("Enter Number for square root :"));
+                        var res = Math.sqrt(a);
+                        document.write("Square root of "+a+" is "+res);
+                        break;
+                    default:
+                        document.write("Wrong Input");
+                }
+                
+            </script>
+        </h1>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Assignment 5</title>
+    </head>
+    <body>
+        <h1>
+            <script>
+                var sales = Number(prompt("Enter the number of sales : "));
+                var com;
+                if(sales>=0 && sales <=5000){
+                    com = parseFloat(sales * 2 / 100);
+                    console.log(com);
+                }
+                else if(sales>=5001 && sales<=10000){
+                    com = parseFloat(sales * 5 / 100);
+                    console.log(com);
+                }
+                else if(sales>=10001 && sales<=20000){
+                    com = parseFloat(sales * 7 / 100);
+                    console.log(com);
+                }
+                else{
+                    com = parseFloat(sales * 10 / 100);
+                    console.log(com);
+                }
+            </script>
+        </h1>
+    </body>
+</html>
