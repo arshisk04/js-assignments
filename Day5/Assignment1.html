@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Assignment 1</title>
+    </head>
+    <body>
+        <script>
+            var arr=[];
+            do{
+                var a = Number(prompt("Enter positive number :"));
+                if(a<0){
+                    alert("Entered Negative Number!!!!!");
+                    continue;
+                }
+                else{
+                    arr.push(a);
+                }
+                var ans = prompt("Do you wish to continue? (y/n):");
+                
+            }while(ans == 'y')
+                
+            let oddNum = arr.filter(el=>el%2==1);
+            
+            let oddSquares = arr.filter(el=>el%2==1).map(el=>el**2);
+            
+            document.write("Array you entered :");
+            for(var i = 0; i<arr.length; i++){
+                document.write(arr[i]+' ');
+            }
+            
+            document.write("<br> Odd Numbers :"+oddNum+' ');
+            
+            document.write("<br> Odd Number Squares :"+oddSquares+' ');
+            
+        </script>
+    </body>
+</html>

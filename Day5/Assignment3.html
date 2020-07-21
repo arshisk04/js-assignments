@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Assignment 3</title>
+    </head>
+    <body>
+        <script> 
+            async function fetchAsync () {
+                let response = await fetch('https://jsonplaceholder.typicode.com/todos');
+                let data = await response.json();
+                return data;
+            }
+            
+            fetchAsync()
+                .then(data => console.log(data))
+        </script>
+    </body>
+</html>
