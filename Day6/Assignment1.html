@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Assignment 6</title>
+        <script>
+
+            var colours = ["red", "yellow", "green", "blue", "orange", "cyan"];
+            var index = 0; 
+
+            function change() {
+  
+                if(index >= colours.length)
+                { 
+                    clearInterval(timer); 
+                }
+                    document.body.style.backgroundColor = colours[index++];
+            }
+            var timer = setInterval(change, 2000)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
